@@ -1,0 +1,10 @@
+diff --git a/utils/ccomp.ml b/utils/ccomp.ml
+index ebb382f..3330e1d 100644
+--- a/utils/ccomp.ml
++++ b/utils/ccomp.ml
+@@ -125,4 +125,5 @@ let call_linker mode output_name files extra =
+         files
+         extra
+   in
++  print_endline cmd;
+   command cmd = 0
