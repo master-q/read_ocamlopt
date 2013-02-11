@@ -3,7 +3,7 @@ PROGS := helloworld/helloworld
 all: ${PROGS}
 
 helloworld/helloworld: helloworld/helloworld.ml
-	ocamlopt -dstartup -o $@ $^
+	ocamlopt -verbose -dstartup -o $@ $^
 
 clean:
 	rm -f `find . -name "*~"`
