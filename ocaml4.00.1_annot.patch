@@ -1,0 +1,13 @@
+diff --git a/Makefile b/Makefile
+index c2003d3..33f9be5 100644
+--- a/Makefile
++++ b/Makefile
+@@ -19,7 +19,7 @@ include stdlib/StdlibModules
+ 
+ CAMLC=boot/ocamlrun boot/ocamlc -nostdlib -I boot
+ CAMLOPT=boot/ocamlrun ./ocamlopt -nostdlib -I stdlib -I otherlibs/dynlink
+-COMPFLAGS= -strict-sequence -warn-error A $(INCLUDES)
++COMPFLAGS= -strict-sequence -warn-error A $(INCLUDES) -annot
+ LINKFLAGS=
+ 
+ CAMLYACC=boot/ocamlyacc
